@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:prime_video_ui_clone/utils/constants/color_constants.dart';
-import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 
-class Moviecardprime extends StatelessWidget {
+class Moviecardrent extends StatelessWidget {
   String imageurl;
-  bool? removeicon;
-  Moviecardprime({super.key, required this.imageurl, this.removeicon = false});
+  String text;
+  Moviecardrent({super.key, required this.imageurl, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -15,26 +14,12 @@ class Moviecardprime extends StatelessWidget {
       decoration: BoxDecoration(color: ColorConstants.blackcolor),
       child: Column(
         children: [
-          Stack(
-            children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(12),
-                child: Image.network(
-                  '$imageurl',
-                  fit: BoxFit.cover,
-                ),
-              ),
-              removeicon == false
-                  ? Positioned(
-                      bottom: 12,
-                      right: 10,
-                      child: Image.asset(
-                        ImageConstants.primeicon,
-                        width: 38,
-                      ),
-                    )
-                  : SizedBox()
-            ],
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.network(
+              '$imageurl',
+              fit: BoxFit.cover,
+            ),
           ),
           SizedBox(height: 2),
           Row(
@@ -46,7 +31,7 @@ class Moviecardprime extends StatelessWidget {
               ),
               SizedBox(width: 5),
               Text(
-                'Subscribe',
+                '$text',
                 style: TextStyle(
                     fontSize: 16,
                     color: ColorConstants.whitecolor,

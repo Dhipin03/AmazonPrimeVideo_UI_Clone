@@ -4,7 +4,9 @@ import 'package:prime_video_ui_clone/utils/constants/color_constants.dart';
 import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 import 'package:prime_video_ui_clone/view/global_widget/gloablwidget.dart';
 import 'package:prime_video_ui_clone/view/global_widget/moviecardprime.dart';
+import 'package:prime_video_ui_clone/view/global_widget/moviecardrent.dart';
 import 'package:prime_video_ui_clone/view/global_widget/primesubscriptioncard.dart';
+import 'package:prime_video_ui_clone/view/global_widget/top10_movecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/languagecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/moviecardminitv.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/videopreviewwidget.dart';
@@ -47,7 +49,7 @@ class _HomescreenState extends State<Homescreen> {
             appbar_section(),
             SliverToBoxAdapter(
               child: Container(
-                height: 22000,
+                height: 9350,
                 decoration: BoxDecoration(color: ColorConstants.blackcolor),
                 child: Column(
                   children: [
@@ -71,6 +73,8 @@ class _HomescreenState extends State<Homescreen> {
                     SizedBox(height: 18),
                     latestMovie_section(),
                     SizedBox(height: 18),
+                    standupspecials(),
+                    SizedBox(height: 18),
                     romanticShows_section(),
                     SizedBox(height: 18),
                     comedymovie_section(),
@@ -85,6 +89,50 @@ class _HomescreenState extends State<Homescreen> {
                     SizedBox(height: 18),
                     recommendedtv_section(),
                     SizedBox(height: 18),
+                    mandarindramas(),
+                    SizedBox(height: 18),
+                    actionandadventuremovie_section(),
+                    SizedBox(height: 18),
+                    worldcinema_section(),
+                    SizedBox(height: 18),
+                    asiandrama_section(),
+                    SizedBox(height: 18),
+                    dramatv_section(),
+                    SizedBox(height: 18),
+                    topmovies_section(),
+                    SizedBox(height: 18),
+                    sciencefiction_section(),
+                    SizedBox(height: 18),
+                    horrormovie_section(),
+                    SizedBox(height: 18),
+                    amazonorginalmovies(),
+                    SizedBox(height: 18),
+                    historicalmovies(),
+                    SizedBox(height: 18),
+                    westernmoviesection(),
+                    SizedBox(height: 18),
+                    sportsmovies(),
+                    SizedBox(height: 18),
+                    top10movies(),
+                    SizedBox(height: 18),
+                    foreignlanguageshows(),
+                    SizedBox(height: 18),
+                    kidsandfamilymovies(),
+                    SizedBox(height: 18),
+                    hitmovies(),
+                    SizedBox(height: 18),
+                    watchbeforetheygone(),
+                    SizedBox(height: 18),
+                    shopactionadventuremovies(),
+                    SizedBox(height: 18),
+                    shopdocumentaries(),
+                    SizedBox(height: 18),
+                    recommendedmovietorent(),
+                    SizedBox(height: 18),
+                    shophistoricalmovie(),
+                    SizedBox(height: 18),
+                    topratedmovie(),
+                    SizedBox(height: 18),
                   ],
                 ),
               ),
@@ -92,6 +140,943 @@ class _HomescreenState extends State<Homescreen> {
           ],
         ),
       ),
+    );
+  }
+
+  Column standupspecials() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Stand-up Specials',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.standupcomedylist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  removeicon: true,
+                  imageurl: DummyDb.standupcomedylist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column kidsandfamilymovies() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Kids and family movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.kidsanfamilymovies.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  removeicon: true,
+                  imageurl: DummyDb.kidsanfamilymovies[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column amazonorginalmovies() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Amazon Orginal movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            Icon(
+              Icons.arrow_forward_ios,
+              size: 15,
+              color: ColorConstants.whitecolor,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 326,
+          child: ListView.builder(
+            itemCount: DummyDb.amazonserieslist2.length,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Primesubscriptioncard(
+                removeicon: true,
+                imageurl: DummyDb.amazonserieslist2[index]['imageurl'],
+              ),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column topratedmovie() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Shop: Top-rated IMDb movies",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: DummyDb.topratedmovies.length,
+                itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Moviecardrent(
+                        text: 'Rent',
+                        imageurl: DummyDb.topratedmovies[index]['imageurl'],
+                      ),
+                    )))
+      ],
+    );
+  }
+
+  Column shophistoricalmovie() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Shop: Historical movies",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: DummyDb.historicalmovies.length,
+                itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Moviecardrent(
+                        text: 'Rent',
+                        imageurl: DummyDb.historicalmovies[index]['imageurl'],
+                      ),
+                    )))
+      ],
+    );
+  }
+
+  Column recommendedmovietorent() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Shop: Recommended Movies to Rent",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: DummyDb.recommnededmovies.length,
+                itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Moviecardrent(
+                        text: 'Rent',
+                        imageurl: DummyDb.recommnededmovies[index]['imageurl'],
+                      ),
+                    )))
+      ],
+    );
+  }
+
+  Column shopdocumentaries() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Shop: Documnentaries",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: DummyDb.documentaries.length,
+                itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Moviecardrent(
+                        text: 'Rent',
+                        imageurl: DummyDb.documentaries[index]['imageurl'],
+                      ),
+                    )))
+      ],
+    );
+  }
+
+  Column shopactionadventuremovies() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Shop: Action and adventure movies",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: DummyDb.watchbeforegonelist.length,
+                itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Moviecardrent(
+                        text: 'Rent',
+                        imageurl: DummyDb.actionadventure[index]['imageurl'],
+                      ),
+                    )))
+      ],
+    );
+  }
+
+  Column watchbeforetheygone() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                "Watch before they're gone",
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyDb.watchbeforegonelist.length,
+              itemBuilder: (context, index) => Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Moviecardprime(
+                    imageurl: DummyDb.watchbeforegonelist[index]['imageurl']),
+              ),
+            ))
+      ],
+    );
+  }
+
+  Column hitmovies() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                'Hits you cannot miss',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              // SizedBox(width: 4),
+              // Icon(
+              //   Icons.arrow_forward_ios,
+              //   color: ColorConstants.whitecolor,
+              //   size: 16,
+              // )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyDb.hitmovieslist.length,
+              itemBuilder: (context, index) => Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Moviecardprime(
+                    imageurl: DummyDb.hitmovieslist[index]['imageurl']),
+              ),
+            ))
+      ],
+    );
+  }
+
+  Column foreignlanguageshows() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                'Foreign language TV shows',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyDb.foreignlanguageshows.length,
+              itemBuilder: (context, index) => Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Moviecardprime(
+                    imageurl: DummyDb.foreignlanguageshows[index]['imageurl']),
+              ),
+            ))
+      ],
+    );
+  }
+
+  Column top10movies() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 18),
+              child: Text(
+                'Top 10 in India',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 170,
+          child: ListView.builder(
+            itemCount: DummyDb.topmovielist.length,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Top10mviecard(
+                num: DummyDb.topmovielist[index]['num'],
+                imageurl: DummyDb.topmovielist[index]['imageurl'],
+              ),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column sportsmovies() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Row(
+            children: [
+              Text(
+                'Sports Movie',
+                style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                    color: ColorConstants.whitecolor),
+              ),
+              SizedBox(width: 4),
+              Icon(
+                Icons.arrow_forward_ios,
+                color: ColorConstants.whitecolor,
+                size: 16,
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+            height: 177,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyDb.sportsmovielist.length,
+              itemBuilder: (context, index) => Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Moviecardprime(
+                    imageurl: DummyDb.sportsmovielist[index]['imageurl']),
+              ),
+            ))
+      ],
+    );
+  }
+
+  Column westernmoviesection() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Western movie',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.westernmovielist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.westernmovielist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column historicalmovies() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Historical movie',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.historicalmovielist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.historicalmovielist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column horrormovie_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Horrror movie',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.horrormovielist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.horrormovielist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column sciencefiction_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Science fiction movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.scifictionmovielist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.scifictionmovielist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column topmovies_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Top movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.topmovies.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.topmovies[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column dramatv_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Drama TV',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.dramatv.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child:
+                  Moviecardprime(imageurl: DummyDb.dramatv[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column asiandrama_section() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('MiniTV - popular Asian dramas - free',
+                  style: TextStyle(
+                      color: ColorConstants.whitecolor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600)),
+              Row(
+                children: [
+                  Text(
+                    'with ads',
+                    style: TextStyle(
+                        color: ColorConstants.whitecolor,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: ColorConstants.whitecolor,
+                    size: 16,
+                  )
+                ],
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 140,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.asiandramas.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: moviecardminitv(
+                  imageurl: DummyDb.asiandramas[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column worldcinema_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Best of world cinema',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 16,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            itemCount: DummyDb.worldcinemlist.length,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.worldcinemlist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column actionandadventuremovie_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Action and adventure movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 16,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            itemCount: DummyDb.actionadventuremovielist.length,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(
+                  imageurl: DummyDb.actionadventuremovielist[index]
+                      ['imageurl']),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Column mandarindramas() {
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'New in mandarin dramas - free with',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600),
+              ),
+              Row(
+                children: [
+                  Text(
+                    'ads',
+                    style: TextStyle(
+                        color: ColorConstants.whitecolor,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: ColorConstants.whitecolor,
+                    size: 16,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 140,
+          child: ListView.builder(
+            itemCount: DummyDb.mandranilist.length,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: moviecardminitv(
+                  imageurl: DummyDb.mandranilist[index]['imageurl']),
+            ),
+          ),
+        )
+      ],
     );
   }
 

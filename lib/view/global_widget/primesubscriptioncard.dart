@@ -4,7 +4,9 @@ import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 
 class Primesubscriptioncard extends StatelessWidget {
   String imageurl;
-  Primesubscriptioncard({super.key, required this.imageurl});
+  bool? removeicon;
+  Primesubscriptioncard(
+      {super.key, required this.imageurl, this.removeicon = false});
 
   @override
   Widget build(BuildContext context) {
@@ -22,13 +24,16 @@ class Primesubscriptioncard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Image.network(fit: BoxFit.cover, '$imageurl'),
               ),
-              Positioned(
-                  bottom: 7,
-                  right: 4,
-                  child: Image.asset(
-                    ImageConstants.primeicon,
-                    width: 42,
-                  ))
+              removeicon == false
+                  ? Positioned(
+                      bottom: 12,
+                      right: 10,
+                      child: Image.asset(
+                        ImageConstants.primeicon,
+                        width: 38,
+                      ),
+                    )
+                  : SizedBox()
             ],
           ),
           SizedBox(height: 6),

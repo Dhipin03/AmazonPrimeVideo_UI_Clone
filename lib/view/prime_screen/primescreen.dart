@@ -1456,7 +1456,7 @@ class Primescreen extends StatelessWidget {
     return SliverAppBar(
       snap: true,
       floating: true,
-      backgroundColor: ColorConstants.transparentcolor.withOpacity(0.9),
+      backgroundColor: ColorConstants.transparentcolor.withOpacity(0.95),
       title: Image.asset(ImageConstants.primeicon),
       actions: [
         Icon(

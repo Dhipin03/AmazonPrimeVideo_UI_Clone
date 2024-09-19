@@ -1648,7 +1648,7 @@ class _HomescreenState extends State<Homescreen> {
         )
       ],
       title: Image.asset(ImageConstants.primevideoimg, width: 102),
-      backgroundColor: ColorConstants.transparentcolor.withOpacity(0.9),
+      backgroundColor: ColorConstants.transparentcolor.withOpacity(0.95),
       bottom: TabBar(
         dividerColor: Colors.black,
         unselectedLabelStyle:

@@ -746,4 +746,517 @@ class DummyDb {
           'https://m.media-amazon.com/images/S/pv-target-images/b2f85870cd4eb8a62a305e9cbbf55d6e534e150320de89fae923c46c973f589f.jpg'
     },
   ];
+  static List subscriptionyoulike = [
+    {
+      'imageurl':
+          'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/Amazon_Youth_Offer_-1.png?VersionId=JOEsjXprVMtY87TQeCJaXQH.FCFIuLln'
+    },
+    {
+      'imageurl':
+          'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/Amazon_Youth_Offer_-1.png?VersionId=JOEsjXprVMtY87TQeCJaXQH.FCFIuLln'
+    },
+    {
+      'imageurl':
+          'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/Amazon_Youth_Offer_-1.png?VersionId=JOEsjXprVMtY87TQeCJaXQH.FCFIuLln'
+    },
+    {
+      'imageurl':
+          'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/Amazon_Youth_Offer_-1.png?VersionId=JOEsjXprVMtY87TQeCJaXQH.FCFIuLln'
+    },
+  ];
+  static List top10subscription = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/6a6572af27b0ea0f717fbbd113f8e809878cfd14e333f4b67a33999b0deddc25.jpg',
+      'num': '1',
+      'text': 'CHAUPAL'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/6a6572af27b0ea0f717fbbd113f8e809878cfd14e333f4b67a33999b0deddc25.jpg',
+      'num': '2',
+      'text': 'CHAUPAL'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/6a6572af27b0ea0f717fbbd113f8e809878cfd14e333f4b67a33999b0deddc25.jpg',
+      'num': '3',
+      'text': 'CHAUPAL'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/6a6572af27b0ea0f717fbbd113f8e809878cfd14e333f4b67a33999b0deddc25.jpg',
+      'num': '4',
+      'text': 'CHAUPAL'
+    },
+  ];
+  static List animelist = [
+    {'imageurl': 'https://wallpapercave.com/wp/wp1837550.jpg'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp5137023.png'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp1837550.jpg'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp5137023.png'},
+  ];
+  static List discoveryplusmovies = [
+    {
+      'imageurl':
+          'https://bbcearth.ca/wp-content/uploads/2023/02/Clean-Serengeti-3-Key-Art.jpg'
+    },
+    {
+      'imageurl':
+          'https://bbcearth.ca/wp-content/uploads/2023/02/Clean-Serengeti-3-Key-Art.jpg'
+    },
+    {
+      'imageurl':
+          'https://bbcearth.ca/wp-content/uploads/2023/02/Clean-Serengeti-3-Key-Art.jpg'
+    },
+    {
+      'imageurl':
+          'https://bbcearth.ca/wp-content/uploads/2023/02/Clean-Serengeti-3-Key-Art.jpg'
+    },
+  ];
+  static List recommendedwithsubcription = [
+    {
+      'imageurl':
+          'https://www.satusfaction.com/wp-content/uploads/2024/02/inside-the-congo.jpg'
+    },
+    {
+      'imageurl':
+          'https://www.satusfaction.com/wp-content/uploads/2024/02/inside-the-congo.jpg'
+    },
+    {
+      'imageurl':
+          'https://www.satusfaction.com/wp-content/uploads/2024/02/inside-the-congo.jpg'
+    },
+    {
+      'imageurl':
+          'https://www.satusfaction.com/wp-content/uploads/2024/02/inside-the-congo.jpg'
+    },
+  ];
+  static List animerecentlyadded = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/e461bac1c5a72ea6fdc6f0105bb95ce628833e638d6202ecd9646513eb8d389b.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/e461bac1c5a72ea6fdc6f0105bb95ce628833e638d6202ecd9646513eb8d389b.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/e461bac1c5a72ea6fdc6f0105bb95ce628833e638d6202ecd9646513eb8d389b.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/e461bac1c5a72ea6fdc6f0105bb95ce628833e638d6202ecd9646513eb8d389b.jpg'
+    },
+  ];
+  static List chaupalrecentlyadded = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bf75a4d7f1d88e96d5547c58ed19f0795d14b6e02f57e5cc42ae17dcf97b19de.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bf75a4d7f1d88e96d5547c58ed19f0795d14b6e02f57e5cc42ae17dcf97b19de.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bf75a4d7f1d88e96d5547c58ed19f0795d14b6e02f57e5cc42ae17dcf97b19de.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bf75a4d7f1d88e96d5547c58ed19f0795d14b6e02f57e5cc42ae17dcf97b19de.jpg'
+    },
+  ];
+  static List animaxgem = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b4279b0d4bf4fba8b29195969ecb7ba3f6acbdc48535affb803d6dac5164ca25.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b4279b0d4bf4fba8b29195969ecb7ba3f6acbdc48535affb803d6dac5164ca25.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b4279b0d4bf4fba8b29195969ecb7ba3f6acbdc48535affb803d6dac5164ca25.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b4279b0d4bf4fba8b29195969ecb7ba3f6acbdc48535affb803d6dac5164ca25.jpg'
+    },
+  ];
+  static List mgmrecentlyadded = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/50f8758c627f3b277942485f3da85b9bce29dad8dae8c523960a61e33a4e832a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/50f8758c627f3b277942485f3da85b9bce29dad8dae8c523960a61e33a4e832a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/50f8758c627f3b277942485f3da85b9bce29dad8dae8c523960a61e33a4e832a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/50f8758c627f3b277942485f3da85b9bce29dad8dae8c523960a61e33a4e832a.jpg'
+    },
+  ];
+  static List erosmovieslist = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a0b42ed8a4a3a0a182e563a1e373035a48912e304cc1ca651d089732bce85aa9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a0b42ed8a4a3a0a182e563a1e373035a48912e304cc1ca651d089732bce85aa9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a0b42ed8a4a3a0a182e563a1e373035a48912e304cc1ca651d089732bce85aa9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a0b42ed8a4a3a0a182e563a1e373035a48912e304cc1ca651d089732bce85aa9.jpg'
+    },
+  ];
+  static List chaupalmostpopular = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b595a58963b45a8495c4d306b3c481d1cb988f682f7b982e442aa1fd6b997178.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b595a58963b45a8495c4d306b3c481d1cb988f682f7b982e442aa1fd6b997178.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b595a58963b45a8495c4d306b3c481d1cb988f682f7b982e442aa1fd6b997178.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b595a58963b45a8495c4d306b3c481d1cb988f682f7b982e442aa1fd6b997178.jpg'
+    },
+  ];
+  static List vrottmostpopular = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a95f94980ca69b46ee279651dfc3a96f7323cf430e81995eb4a625f690bb1bb9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a95f94980ca69b46ee279651dfc3a96f7323cf430e81995eb4a625f690bb1bb9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a95f94980ca69b46ee279651dfc3a96f7323cf430e81995eb4a625f690bb1bb9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a95f94980ca69b46ee279651dfc3a96f7323cf430e81995eb4a625f690bb1bb9.jpg'
+    },
+  ];
+  static List liongatesplay = [
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctzBzE43_lpK-2FubCOVzJuRR90bIMzrt366azar5kisTXiZe6Ur-vvQOwYFrLzxPojU&usqp=CAU'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctzBzE43_lpK-2FubCOVzJuRR90bIMzrt366azar5kisTXiZe6Ur-vvQOwYFrLzxPojU&usqp=CAU'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctzBzE43_lpK-2FubCOVzJuRR90bIMzrt366azar5kisTXiZe6Ur-vvQOwYFrLzxPojU&usqp=CAU'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSctzBzE43_lpK-2FubCOVzJuRR90bIMzrt366azar5kisTXiZe6Ur-vvQOwYFrLzxPojU&usqp=CAU'
+    },
+  ];
+  static List crunchyroll = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/0adfd9a3cb038383b309f51d2608b1c825fbe994593043796e2e18c977eb889d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/0adfd9a3cb038383b309f51d2608b1c825fbe994593043796e2e18c977eb889d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/0adfd9a3cb038383b309f51d2608b1c825fbe994593043796e2e18c977eb889d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/0adfd9a3cb038383b309f51d2608b1c825fbe994593043796e2e18c977eb889d.jpg'
+    },
+  ];
+  static List Mubilist = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/300a011b42d3b82f58a4dad5487b28aa0bb4a933fd50fad5d6a1be3f47b7ead9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/300a011b42d3b82f58a4dad5487b28aa0bb4a933fd50fad5d6a1be3f47b7ead9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/300a011b42d3b82f58a4dad5487b28aa0bb4a933fd50fad5d6a1be3f47b7ead9.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/300a011b42d3b82f58a4dad5487b28aa0bb4a933fd50fad5d6a1be3f47b7ead9.jpg'
+    },
+  ];
+  static List hoichoi = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a1f68529590190bf3f2e5c40b50841a57fdc666a59a4504ace60f07127008b95.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a1f68529590190bf3f2e5c40b50841a57fdc666a59a4504ace60f07127008b95.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a1f68529590190bf3f2e5c40b50841a57fdc666a59a4504ace60f07127008b95.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a1f68529590190bf3f2e5c40b50841a57fdc666a59a4504ace60f07127008b95.jpg'
+    },
+  ];
+  static List manoramaMax = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c746c779da89422ffa47ee20762c47f96ceac39db6f7ab7159fb43d96cace19a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c746c779da89422ffa47ee20762c47f96ceac39db6f7ab7159fb43d96cace19a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c746c779da89422ffa47ee20762c47f96ceac39db6f7ab7159fb43d96cace19a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c746c779da89422ffa47ee20762c47f96ceac39db6f7ab7159fb43d96cace19a.jpg'
+    },
+  ];
+  static List bbcplayer = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2077d728222d96f915b522c75c359ba920f431082b779ddc069b61ae221784b9._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2077d728222d96f915b522c75c359ba920f431082b779ddc069b61ae221784b9._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2077d728222d96f915b522c75c359ba920f431082b779ddc069b61ae221784b9._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2077d728222d96f915b522c75c359ba920f431082b779ddc069b61ae221784b9._UR1920,1080_.jpg'
+    },
+  ];
+  static List bbckids = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/3ed03aa35513249d22ef76570c93c6bdb3b68742ad39b9a2a572c6e62f049d21.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/3ed03aa35513249d22ef76570c93c6bdb3b68742ad39b9a2a572c6e62f049d21.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/3ed03aa35513249d22ef76570c93c6bdb3b68742ad39b9a2a572c6e62f049d21.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/3ed03aa35513249d22ef76570c93c6bdb3b68742ad39b9a2a572c6e62f049d21.jpg'
+    },
+  ];
+  static List sonypicture = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7f742217723ca3885f9e8449e8d4ec7cc93909548207ed2d2a3f483b1134b149.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7f742217723ca3885f9e8449e8d4ec7cc93909548207ed2d2a3f483b1134b149.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7f742217723ca3885f9e8449e8d4ec7cc93909548207ed2d2a3f483b1134b149.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7f742217723ca3885f9e8449e8d4ec7cc93909548207ed2d2a3f483b1134b149.jpg'
+    },
+  ];
+  static List museumtvmsotpopular = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/5ef158bdc60a45f1f4dc1135fbd3449a569ce8d1cc753e603829679267d4e204.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/5ef158bdc60a45f1f4dc1135fbd3449a569ce8d1cc753e603829679267d4e204.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/5ef158bdc60a45f1f4dc1135fbd3449a569ce8d1cc753e603829679267d4e204.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/5ef158bdc60a45f1f4dc1135fbd3449a569ce8d1cc753e603829679267d4e204.png'
+    },
+  ];
+  static List iwonderlist = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/69de251001da144d5aeb1db7870ffc4fd8d7a283850a4038a5c1cccdf4452c02.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/69de251001da144d5aeb1db7870ffc4fd8d7a283850a4038a5c1cccdf4452c02.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/69de251001da144d5aeb1db7870ffc4fd8d7a283850a4038a5c1cccdf4452c02.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/69de251001da144d5aeb1db7870ffc4fd8d7a283850a4038a5c1cccdf4452c02.jpg'
+    },
+  ];
+  static List genreslist = [
+    {'text': 'Action and\nadventure'},
+    {'text': 'Anime'},
+    {'text': 'Comedy'},
+    {'text': 'Documentary'},
+    {'text': 'Drama'},
+    {'text': 'Fantasy'},
+    {'text': 'Horror'},
+    {'text': 'Kids'},
+    {'text': 'Mystery and\nthrillers'},
+    {'text': 'Romance'},
+    {'text': 'Science fiction'},
+  ];
+  static List langugaes1list = [
+    {'text': 'Hindi'},
+    {'text': 'English'},
+    {'text': 'Telugu'},
+    {'text': 'Tamil'},
+    {'text': 'Malayalm'},
+    {'text': 'Kannada'},
+    {'text': 'punjabi'},
+    {'text': 'Marathi'},
+    {'text': 'Gujarati'},
+    {'text': 'Bengali'},
+  ];
+  static List amazonorginalmovies = [
+    {'imageurl': 'https://wallpapercave.com/wp/wp13798807.jpg'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp13798807.jpg'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp13798807.jpg'},
+    {'imageurl': 'https://wallpapercave.com/wp/wp13798807.jpg'},
+  ];
+  static List movietorent = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c15c55f5a8e86fe0a95d8a86ffc60a2116e1e31fd69167d235bc37f284cc867f._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c15c55f5a8e86fe0a95d8a86ffc60a2116e1e31fd69167d235bc37f284cc867f._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c15c55f5a8e86fe0a95d8a86ffc60a2116e1e31fd69167d235bc37f284cc867f._UR1920,1080_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c15c55f5a8e86fe0a95d8a86ffc60a2116e1e31fd69167d235bc37f284cc867f._UR1920,1080_.jpg'
+    },
+  ];
+  static List populartvwithsubsciption = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/16bba9beeee4b8835c317b36ae7a31c75ecb522632df450aeb3be6af0fdab7af.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/16bba9beeee4b8835c317b36ae7a31c75ecb522632df450aeb3be6af0fdab7af.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/16bba9beeee4b8835c317b36ae7a31c75ecb522632df450aeb3be6af0fdab7af.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/16bba9beeee4b8835c317b36ae7a31c75ecb522632df450aeb3be6af0fdab7af.jpg'
+    },
+  ];
+  static List populartvlist = [
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKnX2TwNAHQm8dOTu3uXzMRsLPCx-utX8cg&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKnX2TwNAHQm8dOTu3uXzMRsLPCx-utX8cg&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKnX2TwNAHQm8dOTu3uXzMRsLPCx-utX8cg&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYKnX2TwNAHQm8dOTu3uXzMRsLPCx-utX8cg&s'
+    },
+  ];
+  static List popularmoviessubscription = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/eb4d9086a200eccd2c639ecd74d59b6557542c928b63026d65415205ba408aa2.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/eb4d9086a200eccd2c639ecd74d59b6557542c928b63026d65415205ba408aa2.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/eb4d9086a200eccd2c639ecd74d59b6557542c928b63026d65415205ba408aa2.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/eb4d9086a200eccd2c639ecd74d59b6557542c928b63026d65415205ba408aa2.jpg'
+    },
+  ];
+  static List populartv = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7c1672bcbb985231df92ac310cbb162b182443f781dd4b3e66fe67b53a01f936.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7c1672bcbb985231df92ac310cbb162b182443f781dd4b3e66fe67b53a01f936.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7c1672bcbb985231df92ac310cbb162b182443f781dd4b3e66fe67b53a01f936.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/7c1672bcbb985231df92ac310cbb162b182443f781dd4b3e66fe67b53a01f936.jpg'
+    },
+  ];
 }

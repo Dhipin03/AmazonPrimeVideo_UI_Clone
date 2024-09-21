@@ -47,69 +47,7 @@ class DummyDb {
       'imageurl': 'https://wallpapercave.com/wp/wp13431869.jpg', // Fleabag
     },
   ];
-  static List languagelist = [
-    {
-      'imageurl': 'https://wallpapercave.com/wp/wp5565498.jpg',
-      'lang': 'Hindi',
-      'text': 'Watch in Hindi'
-    },
-    {
-      'imageurl': 'https://wallpapercave.com/wp/wp12425011.jpg',
-      'lang': 'English',
-      'text': 'Watch in English'
-    },
-    {
-      'imageurl': 'https://wallpapercave.com/wp/wp6102702.jpg',
-      'lang': 'Telugu',
-      'text': 'Watch in Telugu'
-    },
-    {
-      'imageurl': 'https://wallpapercave.com/wp/wp5536005.jpg',
-      'lang': 'Tamil',
-      'text': 'Watch in Tamil'
-    },
-    {
-      'imageurl': 'https://wallpapercave.com/wp/wp5941674.jpg',
-      'lang': 'Malayalam',
-      'text': 'Watch in Malayalam'
-    },
-    {
-      'imageurl':
-          'https://assets.gqindia.com/photos/634fdf809e8356769bb06508/16:9/w_2240,c_limit/Kantara_03.jpg',
-      'lang': 'Kannada',
-      'text': 'Watch in Kannada'
-    },
-    {
-      'imageurl':
-          'https://media.assettype.com/freepressjournal/2022-05/87995d98-7eeb-44c9-aa68-5d0ce513b3c9/Screenshot_2022_05_19_at_7_36_11_AM.png',
-      'lang': 'Marathi',
-      'text': 'Watch in Marathi'
-    },
-    {
-      'imageurl':
-          'https://www.hindustantimes.com/ht-img/img/2023/11/30/550x309/_6e50ecd4-9483-11e8-a9be-0a3dd955ac48_1701351385374.jpg',
-      'lang': 'Punjabi',
-      'text': 'Watch in Punjabi'
-    },
-    {
-      'imageurl':
-          'https://i.pinimg.com/736x/f9/d8/3d/f9d83df288e00f80ef9e5318d99920cf.jpg',
-      'lang': 'Bengali',
-      'text': 'Watch in Bengali'
-    },
-    {
-      'imageurl':
-          'https://www.india-forums.com/tellybuzz/images/uploads/982_ojasrawal.jpg',
-      'lang': 'Gujarathi',
-      'text': 'Watch in Gujarathi'
-    },
-    {
-      'imageurl':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApD78zY6e0ZLKw8g4rXWE8_CKmDbFMQAXoQ&s',
-      'lang': 'International',
-      'text': 'Watch in International\nlanguages'
-    },
-  ];
+
   static List storiesfromheartland = [
     {'imageurl': 'https://wallpapercave.com/wp/wp9301776.jpg'},
     {'imageurl': 'https://wallpapercave.com/wp/wp7637498.jpg'},
@@ -1257,6 +1195,322 @@ class DummyDb {
     {
       'imageurl':
           'https://m.media-amazon.com/images/S/pv-target-images/7c1672bcbb985231df92ac310cbb162b182443f781dd4b3e66fe67b53a01f936.jpg'
+    },
+  ];
+  static List popularmovie = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bccc433456910084d8233a64dd9d79924eb15c3382c22d6662d36a10ae073349.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bccc433456910084d8233a64dd9d79924eb15c3382c22d6662d36a10ae073349.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bccc433456910084d8233a64dd9d79924eb15c3382c22d6662d36a10ae073349.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/bccc433456910084d8233a64dd9d79924eb15c3382c22d6662d36a10ae073349.jpg'
+    },
+  ];
+  static List comedymovies = [
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpH98O0HzCep6oIZwkrKrLXxPHNB1Vi2aqQ&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpH98O0HzCep6oIZwkrKrLXxPHNB1Vi2aqQ&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpH98O0HzCep6oIZwkrKrLXxPHNB1Vi2aqQ&s'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpH98O0HzCep6oIZwkrKrLXxPHNB1Vi2aqQ&s'
+    },
+  ];
+  static List hindimovies = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/fb23dc40426b492fdc8790c6d6d6e63545dfa7684cced62eab213c7a27a9565e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/fb23dc40426b492fdc8790c6d6d6e63545dfa7684cced62eab213c7a27a9565e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/fb23dc40426b492fdc8790c6d6d6e63545dfa7684cced62eab213c7a27a9565e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/fb23dc40426b492fdc8790c6d6d6e63545dfa7684cced62eab213c7a27a9565e.jpg'
+    },
+  ];
+  static List topratedhindimovies = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2846a513e278593282d52f2a12efc4eaf1f9e890ecff9e96e3d87cae7904e1da.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2846a513e278593282d52f2a12efc4eaf1f9e890ecff9e96e3d87cae7904e1da.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2846a513e278593282d52f2a12efc4eaf1f9e890ecff9e96e3d87cae7904e1da.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/2846a513e278593282d52f2a12efc4eaf1f9e890ecff9e96e3d87cae7904e1da.jpg'
+    },
+  ];
+  static List topratedshows = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/88c781269f296e0204f6addcd1a06835c27ffaf2a48c0aa2a669566f4c572f78.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/88c781269f296e0204f6addcd1a06835c27ffaf2a48c0aa2a669566f4c572f78.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/88c781269f296e0204f6addcd1a06835c27ffaf2a48c0aa2a669566f4c572f78.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/88c781269f296e0204f6addcd1a06835c27ffaf2a48c0aa2a669566f4c572f78.jpg'
+    },
+  ];
+  static List comedymovie = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a6d65c4ae4e181626d780881aaf2c00efc7e24531971c4eb96e73c3eb1b7367d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a6d65c4ae4e181626d780881aaf2c00efc7e24531971c4eb96e73c3eb1b7367d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a6d65c4ae4e181626d780881aaf2c00efc7e24531971c4eb96e73c3eb1b7367d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/a6d65c4ae4e181626d780881aaf2c00efc7e24531971c4eb96e73c3eb1b7367d.jpg'
+    },
+  ];
+  static List popularhindimovies = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1c65b1e3343f1f8d83c8397c8355627b34216de2899a34d64e2d57974b07208a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1c65b1e3343f1f8d83c8397c8355627b34216de2899a34d64e2d57974b07208a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1c65b1e3343f1f8d83c8397c8355627b34216de2899a34d64e2d57974b07208a.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1c65b1e3343f1f8d83c8397c8355627b34216de2899a34d64e2d57974b07208a.jpg'
+    },
+  ];
+  static List englishmovie = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/9bdf1410f018d974a080724f9b8b016ff4be70c8a2a3b41cbae8867cb188a27c.jpg',
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/9bdf1410f018d974a080724f9b8b016ff4be70c8a2a3b41cbae8867cb188a27c.jpg',
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/9bdf1410f018d974a080724f9b8b016ff4be70c8a2a3b41cbae8867cb188a27c.jpg',
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/9bdf1410f018d974a080724f9b8b016ff4be70c8a2a3b41cbae8867cb188a27c.jpg',
+    },
+  ];
+  static List englishamazonorginalseries = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c8392b393d2ceffbdc5d4fd6d1f6a8fe25f7a55d2251610be99de78f0606897d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c8392b393d2ceffbdc5d4fd6d1f6a8fe25f7a55d2251610be99de78f0606897d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c8392b393d2ceffbdc5d4fd6d1f6a8fe25f7a55d2251610be99de78f0606897d.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c8392b393d2ceffbdc5d4fd6d1f6a8fe25f7a55d2251610be99de78f0606897d.jpg'
+    },
+  ];
+  static List englishrecentlyaddedmovies = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b9067566ef4a4a5f2d54d206afaa9a1f7fbd134509a50b0b94003b1f51e8e9ec.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b9067566ef4a4a5f2d54d206afaa9a1f7fbd134509a50b0b94003b1f51e8e9ec.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b9067566ef4a4a5f2d54d206afaa9a1f7fbd134509a50b0b94003b1f51e8e9ec.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/b9067566ef4a4a5f2d54d206afaa9a1f7fbd134509a50b0b94003b1f51e8e9ec.jpg'
+    },
+  ];
+  static List thrillertv = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/022bbe3c001c1d5014904a3138edbfad09ff19b74451e255a099497e712f0290.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/022bbe3c001c1d5014904a3138edbfad09ff19b74451e255a099497e712f0290.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/022bbe3c001c1d5014904a3138edbfad09ff19b74451e255a099497e712f0290.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/022bbe3c001c1d5014904a3138edbfad09ff19b74451e255a099497e712f0290.jpg'
+    },
+  ];
+  static List languagelist = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/293b0fbc89b6de92e095902eaa9f6c44c407c384814e2c69f564d3f89e0630e7.jpg',
+      'lang': 'Hindi',
+      'text': 'Watch in Hindi'
+    },
+    {
+      'imageurl': 'https://wallpapercave.com/wp/wp12425011.jpg',
+      'lang': 'English',
+      'text': 'Watch in English'
+    },
+    {
+      'imageurl': 'https://wallpapercave.com/wp/wp6102702.jpg',
+      'lang': 'Telugu',
+      'text': 'Watch in Telugu'
+    },
+    {
+      'imageurl': 'https://wallpapercave.com/wp/wp5536005.jpg',
+      'lang': 'Tamil',
+      'text': 'Watch in Tamil'
+    },
+    {
+      'imageurl': 'https://wallpapercave.com/wp/wp5941674.jpg',
+      'lang': 'Malayalam',
+      'text': 'Watch in Malayalam'
+    },
+    {
+      'imageurl':
+          'https://assets.gqindia.com/photos/634fdf809e8356769bb06508/16:9/w_2240,c_limit/Kantara_03.jpg',
+      'lang': 'Kannada',
+      'text': 'Watch in Kannada'
+    },
+    {
+      'imageurl':
+          'https://media.assettype.com/freepressjournal/2022-05/87995d98-7eeb-44c9-aa68-5d0ce513b3c9/Screenshot_2022_05_19_at_7_36_11_AM.png',
+      'lang': 'Marathi',
+      'text': 'Watch in Marathi'
+    },
+    {
+      'imageurl':
+          'https://www.hindustantimes.com/ht-img/img/2023/11/30/550x309/_6e50ecd4-9483-11e8-a9be-0a3dd955ac48_1701351385374.jpg',
+      'lang': 'Punjabi',
+      'text': 'Watch in Punjabi'
+    },
+    {
+      'imageurl':
+          'https://i.pinimg.com/736x/f9/d8/3d/f9d83df288e00f80ef9e5318d99920cf.jpg',
+      'lang': 'Bengali',
+      'text': 'Watch in Bengali'
+    },
+    {
+      'imageurl':
+          'https://www.india-forums.com/tellybuzz/images/uploads/982_ojasrawal.jpg',
+      'lang': 'Gujarathi',
+      'text': 'Watch in Gujarathi'
+    },
+    {
+      'imageurl':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApD78zY6e0ZLKw8g4rXWE8_CKmDbFMQAXoQ&s',
+      'lang': 'International',
+      'text': 'Watch in International\nlanguages'
+    },
+  ];
+  static List teluguhits = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1eca4d4f8b57b1568962efba4f4665009a8d0eff8fc3fd03916141a4fc7c118e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1eca4d4f8b57b1568962efba4f4665009a8d0eff8fc3fd03916141a4fc7c118e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1eca4d4f8b57b1568962efba4f4665009a8d0eff8fc3fd03916141a4fc7c118e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.png'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/1eca4d4f8b57b1568962efba4f4665009a8d0eff8fc3fd03916141a4fc7c118e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.png'
+    },
+  ];
+  static List toptamilmovie = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/74e544cc6c11b8664eb4e9b06ba840095b4cc14596611f7746eafe7dd731747c._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/74e544cc6c11b8664eb4e9b06ba840095b4cc14596611f7746eafe7dd731747c._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/74e544cc6c11b8664eb4e9b06ba840095b4cc14596611f7746eafe7dd731747c._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/74e544cc6c11b8664eb4e9b06ba840095b4cc14596611f7746eafe7dd731747c._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,808,263,156_.jpg'
+    },
+  ];
+  static List topmalayammovie = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c6aaa22bf62460fbb919ff181540ae57e1860db1b0f2f7ade7295c3234a6c137.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c6aaa22bf62460fbb919ff181540ae57e1860db1b0f2f7ade7295c3234a6c137.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c6aaa22bf62460fbb919ff181540ae57e1860db1b0f2f7ade7295c3234a6c137.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/c6aaa22bf62460fbb919ff181540ae57e1860db1b0f2f7ade7295c3234a6c137.jpg'
     },
   ];
 }

@@ -3,8 +3,12 @@ import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:prime_video_ui_clone/dummy_db.dart';
 import 'package:prime_video_ui_clone/utils/constants/color_constants.dart';
 import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
-import 'package:prime_video_ui_clone/view/genres_screen/actionadventure.dart';
-import 'package:prime_video_ui_clone/view/genres_screen/anime_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/englishlanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/hindilanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/malayalamlanguage.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/tamillanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/telugulanguage_scree.dart';
+import 'package:prime_video_ui_clone/view/genres_screen/genresscreen.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -98,13 +102,52 @@ class _SearchScreenState extends State<SearchScreen> {
                       if (index == 0) {
                         PersistentNavBarNavigator.pushNewScreen(
                           context,
-                          screen: GenresScreen(),
+                          screen: GenresScreen(
+                            title: 'Action and adventure',
+                            imageurl: DummyDb.topmovies[index]['imageurl'],
+                            imageurl2: DummyDb.toptvlist[index]['imageurl'],
+                            imageurl3: DummyDb.movietorent[index]['imageurl'],
+                            imageurl4: DummyDb.topratedmovies[index]
+                                ['imageurl'],
+                            imageurl5: DummyDb.showlikelist[index]['imageurl'],
+                            imageurl6: DummyDb.popularmovie[index]['imageurl'],
+                            imageurl7: DummyDb.popularmoviessubscription[index]
+                                ['imageurl'],
+                          ),
                           withNavBar: true,
                         );
-                      } else {
+                      } else if (index == 2) {
                         PersistentNavBarNavigator.pushNewScreen(
                           context,
-                          screen: Animescreen(),
+                          screen: GenresScreen(
+                            title: 'Comedy',
+                            imageurl: DummyDb.comedymovies[index]['imageurl'],
+                            imageurl2: DummyDb.toptvlist[index]['imageurl'],
+                            imageurl3: DummyDb.movietorent[index]['imageurl'],
+                            imageurl4: DummyDb.topratedmovies[index]
+                                ['imageurl'],
+                            imageurl5: DummyDb.showlikelist[index]['imageurl'],
+                            imageurl6: DummyDb.popularmovie[index]['imageurl'],
+                            imageurl7: DummyDb.popularmoviessubscription[index]
+                                ['imageurl'],
+                          ),
+                          withNavBar: true,
+                        );
+                      } else if (index == 3) {
+                        PersistentNavBarNavigator.pushNewScreen(
+                          context,
+                          screen: GenresScreen(
+                            title: 'Documentary',
+                            imageurl: DummyDb.comedymovies[index]['imageurl'],
+                            imageurl2: DummyDb.toptvlist[index]['imageurl'],
+                            imageurl3: DummyDb.movietorent[index]['imageurl'],
+                            imageurl4: DummyDb.topratedmovies[index]
+                                ['imageurl'],
+                            imageurl5: DummyDb.showlikelist[index]['imageurl'],
+                            imageurl6: DummyDb.popularmovie[index]['imageurl'],
+                            imageurl7: DummyDb.popularmoviessubscription[index]
+                                ['imageurl'],
+                          ),
                           withNavBar: true,
                         );
                       }
@@ -177,24 +220,53 @@ class _SearchScreenState extends State<SearchScreen> {
                   height: featurecollectionheight,
                   child: ListView.separated(
                       physics: NeverScrollableScrollPhysics(),
-                      itemBuilder: (context, index) => Container(
-                            height: 35,
-                            child: Row(
-                              children: [
-                                Text(
-                                  DummyDb.langugaes1list[index]['text'],
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.white,
+                      itemBuilder: (context, index) => GestureDetector(
+                            onTap: () {
+                              if (index == 0) {
+                                PersistentNavBarNavigator.pushNewScreen(
+                                  context,
+                                  screen: Hindlanguagescreen(),
+                                  withNavBar: true,
+                                );
+                              } else if (index == 1) {
+                                PersistentNavBarNavigator.pushNewScreen(
+                                  context,
+                                  screen: EnglishlanguageScreen(),
+                                  withNavBar: true,
+                                );
+                              } else if (index == 2) {
+                                PersistentNavBarNavigator.pushNewScreen(context,
+                                    screen: TelugulanguageScreen(),
+                                    withNavBar: true);
+                              } else if (index == 3) {
+                                PersistentNavBarNavigator.pushNewScreen(context,
+                                    screen: TamillanguageScreen(),
+                                    withNavBar: true);
+                              } else if (index == 4) {
+                                PersistentNavBarNavigator.pushNewScreen(context,
+                                    screen: MalayalamlanguageScreen(),
+                                    withNavBar: true);
+                              }
+                            },
+                            child: Container(
+                              height: 35,
+                              child: Row(
+                                children: [
+                                  Text(
+                                    DummyDb.langugaes1list[index]['text'],
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.white,
+                                    ),
                                   ),
-                                ),
-                                Spacer(),
-                                Icon(
-                                  Icons.arrow_forward_ios,
-                                  color: ColorConstants.whitecolor,
-                                  size: 18,
-                                )
-                              ],
+                                  Spacer(),
+                                  Icon(
+                                    Icons.arrow_forward_ios,
+                                    color: ColorConstants.whitecolor,
+                                    size: 18,
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                       separatorBuilder: (context, index) => Divider(

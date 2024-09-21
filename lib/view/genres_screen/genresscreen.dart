@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:prime_video_ui_clone/dummy_db.dart';
@@ -7,7 +9,25 @@ import 'package:prime_video_ui_clone/view/global_widget/moviecardprime.dart';
 import 'package:prime_video_ui_clone/view/global_widget/moviecardrent.dart';
 
 class GenresScreen extends StatefulWidget {
-  const GenresScreen({super.key});
+  String title;
+  String imageurl;
+  String imageurl2;
+  String imageurl3;
+  String imageurl4;
+  String imageurl5;
+  String imageurl6;
+  String imageurl7;
+  GenresScreen({
+    super.key,
+    required this.imageurl,
+    required this.title,
+    required this.imageurl2,
+    required this.imageurl3,
+    required this.imageurl4,
+    required this.imageurl5,
+    required this.imageurl6,
+    required this.imageurl7,
+  });
 
   @override
   State<GenresScreen> createState() => _GenresScreenState();
@@ -25,17 +45,73 @@ class _GenresScreenState extends State<GenresScreen> {
             SliverToBoxAdapter(
               child: Container(
                 padding: EdgeInsets.only(top: 12),
-                height: 1500,
+                height: 1700,
                 color: ColorConstants.blackcolor,
                 child: Column(
                   children: [
                     movies(),
                     SizedBox(height: 18),
-                    toptv_section(),
+                    tvshows_section(),
                     SizedBox(height: 18),
                     movietorent(),
                     SizedBox(height: 18),
+                    popularmovie_section(),
+                    SizedBox(height: 18),
                     populartv(),
+                    SizedBox(height: 18),
+                    Column(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 16),
+                              child: Text(
+                                'Shop: Popular movies with',
+                                style: TextStyle(
+                                    color: ColorConstants.whitecolor,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 16),
+                                  child: Text(
+                                    'Subscriptions',
+                                    style: TextStyle(
+                                        color: ColorConstants.whitecolor,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18),
+                                  ),
+                                ),
+                                SizedBox(width: 4),
+                                Icon(
+                                  Icons.arrow_forward_ios,
+                                  color: ColorConstants.whitecolor,
+                                  size: 18,
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 12),
+                        SizedBox(
+                          height: 177,
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: DummyDb.movietorent.length,
+                            itemBuilder: (context, index) => Padding(
+                              padding: const EdgeInsets.only(left: 16),
+                              child: Moviecardrent(
+                                  text: 'Subscribe',
+                                  imageurl: widget.imageurl6),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                     SizedBox(height: 18),
                     populartvwithsubscription()
                   ],
@@ -45,6 +121,45 @@ class _GenresScreenState extends State<GenresScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  Column popularmovie_section() {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Text(
+                'Popular movies',
+                style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18),
+              ),
+            ),
+            SizedBox(width: 4),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: ColorConstants.whitecolor,
+              size: 18,
+            )
+          ],
+        ),
+        SizedBox(height: 12),
+        SizedBox(
+          height: 177,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyDb.populartvlist.length,
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Moviecardprime(imageurl: widget.imageurl4),
+            ),
+          ),
+        )
+      ],
     );
   }
 
@@ -79,9 +194,7 @@ class _GenresScreenState extends State<GenresScreen> {
             itemCount: DummyDb.latestmovielist.length,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Moviecardprime(
-                  removeicon: true,
-                  imageurl: DummyDb.latestmovielist[index]['imageurl']),
+              child: Moviecardprime(imageurl: widget.imageurl),
             ),
           ),
         )
@@ -120,8 +233,7 @@ class _GenresScreenState extends State<GenresScreen> {
             itemCount: DummyDb.populartvlist.length,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Moviecardprime(
-                  imageurl: DummyDb.populartvlist[index]['imageurl']),
+              child: Moviecardprime(imageurl: widget.imageurl5),
             ),
           ),
         )
@@ -161,9 +273,9 @@ class _GenresScreenState extends State<GenresScreen> {
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
               child: Moviecardrent(
-                  text: 'Subscribe',
-                  imageurl: DummyDb.populartvwithsubsciption[index]
-                      ['imageurl']),
+                text: 'Subscribe',
+                imageurl: widget.imageurl7,
+              ),
             ),
           ),
         )
@@ -202,9 +314,7 @@ class _GenresScreenState extends State<GenresScreen> {
             itemCount: DummyDb.movietorent.length,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Moviecardrent(
-                  text: 'Rent',
-                  imageurl: DummyDb.movietorent[index]['imageurl']),
+              child: Moviecardrent(text: 'Rent', imageurl: widget.imageurl3),
             ),
           ),
         )
@@ -212,7 +322,7 @@ class _GenresScreenState extends State<GenresScreen> {
     );
   }
 
-  Column toptv_section() {
+  Column tvshows_section() {
     return Column(
       children: [
         Row(
@@ -243,9 +353,7 @@ class _GenresScreenState extends State<GenresScreen> {
             itemCount: DummyDb.toptvlist.length,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Moviecardprime(
-                  removeicon: true,
-                  imageurl: DummyDb.toptvlist[index]['imageurl']),
+              child: Moviecardprime(imageurl: widget.imageurl2),
             ),
           ),
         )
@@ -277,7 +385,7 @@ class _GenresScreenState extends State<GenresScreen> {
           color: ColorConstants.whitecolor,
           fontWeight: FontWeight.w600,
           fontSize: 21),
-      title: Text('Action and adventure'),
+      title: Text(widget.title),
       backgroundColor: ColorConstants.transparentcolor.withOpacity(0.95),
       bottom: TabBar(
         dividerColor: Colors.black,

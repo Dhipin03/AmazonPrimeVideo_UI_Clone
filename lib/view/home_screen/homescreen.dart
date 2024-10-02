@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:prime_video_ui_clone/dummy_db.dart';
@@ -12,6 +14,7 @@ import 'package:prime_video_ui_clone/view/global_widget/top10_movecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/languagecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/moviecardminitv.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/videopreviewwidget.dart';
+import 'package:prime_video_ui_clone/view/watch_for_freetrendingshow/free_trendingshow.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Homescreen extends StatefulWidget {
@@ -24,6 +27,7 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
   PageController _pagecontroller = PageController();
   PageController _pagecontroller1 = PageController();
+  bool isClicked = false;
   @override
   void initState() {
     super.initState();
@@ -1765,15 +1769,51 @@ class _HomescreenState extends State<Homescreen> {
         indicator: BoxDecoration(),
         tabs: [
           Tab(
-            child: Container(
-              width: 83,
-              height: 35,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(22),
-                border: Border.all(color: ColorConstants.greycolor),
-              ),
-              child: Center(
-                child: Text("Movies"),
+            child: InkWell(
+              onTap: () {
+                setState(() {
+                  isClicked = !isClicked;
+                });
+              },
+              child: Container(
+                padding: EdgeInsets.all(8),
+                //width: 83,
+                height: 35,
+                decoration: BoxDecoration(
+                  color: isClicked == false
+                      ? ColorConstants.blackcolor
+                      : ColorConstants.whitecolor,
+                  borderRadius: BorderRadius.circular(22),
+                  border: Border.all(color: ColorConstants.greycolor),
+                ),
+                child: Center(
+                  child: Row(
+                    children: [
+                      Text(
+                        "Movies",
+                        style: TextStyle(
+                            color: isClicked == false
+                                ? ColorConstants.whitecolor
+                                : ColorConstants.blackcolor),
+                      ),
+                      SizedBox(width: 2),
+                      isClicked == true
+                          ? InkWell(
+                              onTap: () {
+                                setState(() {
+                                  isClicked = false;
+                                });
+                              },
+                              child: Icon(
+                                Icons.close,
+                                size: 18,
+                                color: ColorConstants.blackcolor,
+                              ),
+                            )
+                          : SizedBox()
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
@@ -1809,7 +1849,7 @@ class _HomescreenState extends State<Homescreen> {
     );
   }
 
-  SizedBox mainmovieposter_section() {
+  Widget mainmovieposter_section() {
     return SizedBox(
       height: 260,
       child: PageView.builder(
@@ -1830,12 +1870,21 @@ class _HomescreenState extends State<Homescreen> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Text(
-                "Watch for Free - Trending shows",
-                style: TextStyle(
-                  color: ColorConstants.whitecolor,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18,
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FreeTrendingshow(),
+                      ));
+                },
+                child: Text(
+                  "Watch for Free - Trending shows",
+                  style: TextStyle(
+                    color: ColorConstants.whitecolor,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 18,
+                  ),
                 ),
               ),
             ),

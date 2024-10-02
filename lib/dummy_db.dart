@@ -1513,4 +1513,54 @@ class DummyDb {
           'https://m.media-amazon.com/images/S/pv-target-images/c6aaa22bf62460fbb919ff181540ae57e1860db1b0f2f7ade7295c3234a6c137.jpg'
     },
   ];
+  static List trendingshowList = [
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/8e8ad9669884c8f9c87e663c670fdbe925fcebccf5fd71adb99d0ee53dc3d842.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/255ebd139798ab8f44c674f2a0c78f92ebdcb9b6c2d272b06e4d83874de0dcc4.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/255ebd139798ab8f44c674f2a0c78f92ebdcb9b6c2d272b06e4d83874de0dcc4.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+    {
+      'imageurl':
+          'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+  ];
 }

@@ -5,8 +5,12 @@ import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 class Primesubscriptioncard extends StatelessWidget {
   String imageurl;
   bool? removeicon;
-  Primesubscriptioncard(
-      {super.key, required this.imageurl, this.removeicon = false});
+
+  Primesubscriptioncard({
+    super.key,
+    required this.imageurl,
+    this.removeicon = false,
+  });
 
   @override
   Widget build(BuildContext context) {

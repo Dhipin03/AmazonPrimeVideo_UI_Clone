@@ -16,4 +16,5 @@ class ImageConstants {
   static const String malayalamlanguagecard =
       'https://wallpapercave.com/wp/wp5941674.jpg';
   static const String avataricon = 'assets/images/file (2).png';
+  static const String checkicon = 'assets/images/check.png';
 }

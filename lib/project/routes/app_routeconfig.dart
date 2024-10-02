@@ -18,7 +18,7 @@ class AppRouteconfig {
         path: '/',
         name: "whoIsWatchingscreen",
         pageBuilder: (context, state) {
-          return MaterialPage(child: WhoIsWatchingScreen());
+          return MaterialPage(child: Whoiswatchingscreen());
         },
       ),
       GoRoute(

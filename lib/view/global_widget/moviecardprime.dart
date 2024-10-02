@@ -5,7 +5,12 @@ import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 class Moviecardprime extends StatelessWidget {
   String imageurl;
   bool? removeicon;
-  Moviecardprime({super.key, required this.imageurl, this.removeicon = false});
+  bool? subscriptionremove;
+  Moviecardprime(
+      {super.key,
+      required this.imageurl,
+      this.removeicon = false,
+      this.subscriptionremove = false});
 
   @override
   Widget build(BuildContext context) {
@@ -37,23 +42,25 @@ class Moviecardprime extends StatelessWidget {
             ],
           ),
           SizedBox(height: 2),
-          Row(
-            children: [
-              Icon(
-                Icons.shopping_bag,
-                color: ColorConstants.yellowcolor,
-                size: 20,
-              ),
-              SizedBox(width: 5),
-              Text(
-                'Subscribe',
-                style: TextStyle(
-                    fontSize: 16,
-                    color: ColorConstants.whitecolor,
-                    fontWeight: FontWeight.w500),
-              )
-            ],
-          )
+          subscriptionremove == false
+              ? Row(
+                  children: [
+                    Icon(
+                      Icons.shopping_bag,
+                      color: ColorConstants.yellowcolor,
+                      size: 20,
+                    ),
+                    SizedBox(width: 5),
+                    Text(
+                      'Subscribe',
+                      style: TextStyle(
+                          fontSize: 16,
+                          color: ColorConstants.whitecolor,
+                          fontWeight: FontWeight.w500),
+                    )
+                  ],
+                )
+              : SizedBox()
         ],
       ),
     );

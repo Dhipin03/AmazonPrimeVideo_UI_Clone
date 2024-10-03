@@ -6,6 +6,11 @@ import 'package:prime_video_ui_clone/dummy_db.dart';
 import 'package:prime_video_ui_clone/utils/constants/color_constants.dart';
 import 'package:prime_video_ui_clone/utils/constants/image_constants.dart';
 import 'package:prime_video_ui_clone/view/account_screen/account_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/englishlanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/hindilanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/malayalamlanguage.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/tamillanguage_screen.dart';
+import 'package:prime_video_ui_clone/view/featured_collections_screen/telugulanguage_scree.dart';
 import 'package:prime_video_ui_clone/view/global_widget/gloablwidget.dart';
 import 'package:prime_video_ui_clone/view/global_widget/moviecardprime.dart';
 import 'package:prime_video_ui_clone/view/global_widget/moviecardrent.dart';
@@ -14,6 +19,7 @@ import 'package:prime_video_ui_clone/view/global_widget/top10_movecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/languagecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/moviecardminitv.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/videopreviewwidget.dart';
+import 'package:prime_video_ui_clone/view/moviesereslist_screen/movieserieslist_screen.dart';
 import 'package:prime_video_ui_clone/view/watch_for_freetrendingshow/free_trendingshow.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -1562,12 +1568,24 @@ class _HomescreenState extends State<Homescreen> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Text(
-                'Stories from the heartland',
-                style: TextStyle(
-                    color: ColorConstants.whitecolor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18),
+              child: InkWell(
+                onTap: () {
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: MovieserieslistScreen(
+                      maintitle: 'Stories from the\nheartland',
+                    ),
+                    withNavBar: true, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.fade,
+                  );
+                },
+                child: Text(
+                  'Stories from the heartland',
+                  style: TextStyle(
+                      color: ColorConstants.whitecolor,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18),
+                ),
               ),
             ),
             SizedBox(width: 4),
@@ -1622,10 +1640,50 @@ class _HomescreenState extends State<Homescreen> {
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) => Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: languagecard(
-                imageurl: DummyDb.languagelist[index]['imageurl'],
-                lang: DummyDb.languagelist[index]['lang'],
-                text: DummyDb.languagelist[index]['text'],
+              child: InkWell(
+                onTap: () {
+                  if (index == 0) {
+                    PersistentNavBarNavigator.pushNewScreen(
+                      context,
+                      screen: Hindlanguagescreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation: PageTransitionAnimation.fade,
+                    );
+                  } else if (index == 1) {
+                    PersistentNavBarNavigator.pushNewScreen(
+                      context,
+                      screen: EnglishlanguageScreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation: PageTransitionAnimation.fade,
+                    );
+                  } else if (index == 2) {
+                    PersistentNavBarNavigator.pushNewScreen(
+                      context,
+                      screen: TelugulanguageScreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation: PageTransitionAnimation.fade,
+                    );
+                  } else if (index == 3) {
+                    PersistentNavBarNavigator.pushNewScreen(
+                      context,
+                      screen: TamillanguageScreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation: PageTransitionAnimation.fade,
+                    );
+                  } else if (index == 4) {
+                    PersistentNavBarNavigator.pushNewScreen(
+                      context,
+                      screen: MalayalamlanguageScreen(),
+                      withNavBar: true, // OPTIONAL VALUE. True by default.
+                      pageTransitionAnimation: PageTransitionAnimation.fade,
+                    );
+                  }
+                },
+                child: languagecard(
+                  imageurl: DummyDb.languagelist[index]['imageurl'],
+                  lang: DummyDb.languagelist[index]['lang'],
+                  text: DummyDb.languagelist[index]['text'],
+                ),
               ),
             ),
           ),

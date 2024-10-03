@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:prime_video_ui_clone/utils/constants/color_constants.dart';
+import 'package:prime_video_ui_clone/view/autodownload_learrnmore_screen/autodownload_learnmoreScreeen.dart';
 
 class Autodownloadscreen extends StatefulWidget {
   const Autodownloadscreen({super.key});
@@ -41,9 +43,19 @@ class _AutodownloadscreenState extends State<Autodownloadscreen> {
                     fontSize: 14,
                     fontWeight: FontWeight.w600),
               ),
-              Text(
-                'Learn more',
-                style: TextStyle(color: ColorConstants.bluecolor),
+              InkWell(
+                onTap: () {
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: AutodownloadLearnmorescreeen(),
+                    withNavBar: true, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                  );
+                },
+                child: Text(
+                  'Learn more',
+                  style: TextStyle(color: ColorConstants.bluecolor),
+                ),
               ),
               SizedBox(height: 12),
               Divider(

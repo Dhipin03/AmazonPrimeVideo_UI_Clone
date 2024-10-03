@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:prime_video_ui_clone/view/bottom_navbar/bottomnavbar.dart';
 import 'package:prime_video_ui_clone/view/auto_download_screen/autodownload_screen.dart';
+import 'package:prime_video_ui_clone/view/newUser_screen/newuser_screen.dart';
 import 'package:prime_video_ui_clone/view/who_is_watching/whoIsWatchingScreen.dart';
 
 class AppRouteconfig {
@@ -26,6 +27,13 @@ class AppRouteconfig {
         name: "autodownloadscreen",
         pageBuilder: (context, state) {
           return MaterialPage(child: Autodownloadscreen());
+        },
+      ),
+      GoRoute(
+        path: '/newuser',
+        name: "newuserscreen",
+        pageBuilder: (context, state) {
+          return MaterialPage(child: NewuserScreen());
         },
       ),
     ],

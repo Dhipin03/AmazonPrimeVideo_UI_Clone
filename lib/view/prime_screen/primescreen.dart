@@ -10,6 +10,7 @@ import 'package:prime_video_ui_clone/view/global_widget/moviecardrent.dart';
 import 'package:prime_video_ui_clone/view/global_widget/primesubscriptioncard.dart';
 import 'package:prime_video_ui_clone/view/global_widget/top10_movecard.dart';
 import 'package:prime_video_ui_clone/view/home_screen/widgets/languagecard.dart';
+import 'package:prime_video_ui_clone/view/moviesereslist_screen/movieserieslist_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class Primescreen extends StatelessWidget {
@@ -32,7 +33,7 @@ class Primescreen extends StatelessWidget {
                 children: [
                   mainmoviescreen(_pagecontroller),
                   SizedBox(height: 18),
-                  storiesfromheartland(),
+                  storiesfromheartland(context),
                   SizedBox(height: 18),
                   tvshowyoulike(),
                   SizedBox(height: 18),
@@ -1384,19 +1385,31 @@ class Primescreen extends StatelessWidget {
     );
   }
 
-  Column storiesfromheartland() {
+  Column storiesfromheartland(BuildContext context) {
     return Column(
       children: [
         Row(
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 16),
-              child: Text(
-                'Stories from the heartland',
-                style: TextStyle(
-                    color: ColorConstants.whitecolor,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18),
+              child: GestureDetector(
+                onTap: () {
+                  PersistentNavBarNavigator.pushNewScreen(
+                    context,
+                    screen: MovieserieslistScreen(
+                      maintitle: 'Stories from the\nheartland',
+                    ),
+                    withNavBar: true, // OPTIONAL VALUE. True by default.
+                    pageTransitionAnimation: PageTransitionAnimation.fade,
+                  );
+                },
+                child: Text(
+                  'Stories from the heartland',
+                  style: TextStyle(
+                      color: ColorConstants.whitecolor,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18),
+                ),
               ),
             ),
             SizedBox(width: 4),

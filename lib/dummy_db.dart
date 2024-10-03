@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class DummyDb {
   static List mainmovieposterlist = [
     {
@@ -1561,6 +1563,50 @@ class DummyDb {
     {
       'imageurl':
           'https://m.media-amazon.com/images/S/pv-target-images/681d894f7571c51d3dd749d0170b914d33b02486f0ee21322939aeaae202d46e.jpg'
+    },
+  ];
+  static List tvshowslist = [
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/6e3f075/2147483647/strip/true/crop/1919x1080+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F91%2F16%2F4234e20e4618a6c05682bf9f280c%2F16x9-mzp-ka-r1-kkau-copy.jpg',
+      'title': 'Mirzapur -',
+      'season': 'Season 1',
+      'year': '2018',
+    },
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/9b6a739/2147483647/strip/true/crop/1199x675+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F70%2F43%2F90bc349b42c3a1c20f2b2b9cfbe2%2F4x5-dig-panchayat-ka-2l.jpg',
+      'title': 'Panchayat -',
+      'season': 'Season 1',
+      'year': '2020',
+    },
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/6e3f075/2147483647/strip/true/crop/1919x1080+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F91%2F16%2F4234e20e4618a6c05682bf9f280c%2F16x9-mzp-ka-r1-kkau-copy.jpg',
+      'title': 'Mirzapur -',
+      'season': 'Season 1',
+      'year': '2018',
+    },
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/6e3f075/2147483647/strip/true/crop/1919x1080+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F91%2F16%2F4234e20e4618a6c05682bf9f280c%2F16x9-mzp-ka-r1-kkau-copy.jpg',
+      'title': 'Mirzapur -',
+      'season': 'Season 1',
+      'year': '2018',
+    },
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/9b6a739/2147483647/strip/true/crop/1199x675+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F70%2F43%2F90bc349b42c3a1c20f2b2b9cfbe2%2F4x5-dig-panchayat-ka-2l.jpg',
+      'title': 'Panchayat -',
+      'season': 'Season 1',
+      'year': '2020',
+    },
+    {
+      'imageurl':
+          'https://assets.aboutamazon.com/dims4/default/9b6a739/2147483647/strip/true/crop/1199x675+0+0/resize/1240x698!/quality/90/?url=https%3A%2F%2Famazon-blogs-brightspot.s3.amazonaws.com%2F70%2F43%2F90bc349b42c3a1c20f2b2b9cfbe2%2F4x5-dig-panchayat-ka-2l.jpg',
+      'title': 'Panchayat -',
+      'season': 'Season 1',
+      'year': '2020',
     },
   ];
 }
